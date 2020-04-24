@@ -3,7 +3,6 @@ import { createGlobalStyle, css } from 'styled-components';
 const variables = css`
   :root {}
   html{
-    font-family: 'Spartan', sans-serif;
     font-weight: 500;
     font-size: 15px;
   }
@@ -17,6 +16,7 @@ const modernize = css`
   body {
     margin: 0;
     background-color: ${(props) => props.theme.colors.background};
+    font-family: 'Nunito Sans', sans-serif;
 
   }
 
