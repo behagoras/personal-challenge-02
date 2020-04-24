@@ -1,4 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frontend Mentor - REST Countries API with color theme switcher
+
+![Design preview for the REST Countries API with color theme switcher coding challenge](./challenge/design/desktop-preview.jpg)
+
+## Welcome! 👋
+
+Thanks for checking out this front-end coding challenge.
+
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+
+**To do this challenge, you need a good understanding of JavaScript.**
+
+## The challenge
+
+Your challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs.
+
+You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
+
+Your users should be able to:
+
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode
+
+Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+
+## Sharing your solution
+
+There are multiple places you can share your solution:
+
+1. Submit it on the platform so that other users will see your solution on the site. Other users will be able to give you feedback, which could help improve your code for the next project.
+2. Share your repository and live URL in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
+3. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor** including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
+
+## Giving feedback
+
+Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
+
+This challenge is completely free. Please share it with anyone who will find it useful for practice.
+
+**Have fun building!** 🚀
+
 
 ## Available Scripts
 

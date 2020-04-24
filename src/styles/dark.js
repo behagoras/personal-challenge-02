@@ -8,10 +8,10 @@
 
 const theme = {
   colors: {
-    background: ' hsl(0, 0%, 98%)',
-    ui: '#ffffff',
-    text: 'hsl(200, 15%, 8%)',
-    textSoft: '#3a3a3a',
+    background: 'hsl(207, 26%, 17%)',
+    ui: 'hsl(209, 23%, 22%)',
+    text: 'hsl(200, 15%, 98%)',
+    textSoft: 'hsl(200, 15%, 90%)',
   },
   fonts: ['sans-serif', 'Roboto'],
   fontSizes: {
@@ -22,4 +22,3 @@ const theme = {
 };
 
 export default theme;
-
