@@ -8,7 +8,7 @@ import AppLayout from './layouts/AppLayout';
 
 const store = createStore(reducers, {
   countries: [],
-  theme: 'light',
+  dark: false,
 });
 
 const App = () => {
