@@ -10,22 +10,20 @@ function reducer(state = [], action) {
     case 'SET_FILTERED':
       return {
         ...state,
-        filters: [{ region: action.payload }],
+        region: action.payload,
         filtered: state.countries.filter((country) => {
-          console.log(country);
-          console.log(action.payload);
-          return country[0].region === action.payload;
+          return (country[0].region === action.payload && country[0].name.toUpperCase().includes(state.search.toUpperCase()));
         }),
       };
     case 'SEARCH_ITEM':
       console.log(action.payload);
-      console.log(state.filters);
+      console.log(state.region);
       return {
         ...state,
         search: action.payload,
         filtered: state.countries.filter((country) => {
           ''.toUpperCase();
-          return (country[0].name.toUpperCase().includes(action.payload.toUpperCase()));
+          return (country[0].name.toUpperCase().includes(action.payload.toUpperCase()) && country[0].region.includes(state.region));
         }),
       };
     case 'SET_THEME':

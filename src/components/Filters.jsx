@@ -63,6 +63,7 @@ const Filters = (props) => {
         <i className="fa fa-sort-desc" aria-hidden="true" />
       </Button>
       <Dropdown onClick={handleSearch} show={show}>
+        <Element><Anchor onClick={() => { handleFilter('') ; }}>Worldwide</Anchor></Element>
         <Element><Anchor onClick={() => { handleFilter('Africa') ; }}>Africa</Anchor></Element>
         <Element><Anchor onClick={() => { handleFilter('America') ; }}>America</Anchor></Element>
         <Element><Anchor onClick={() => { handleFilter('Asia') ; }}>Asia</Anchor></Element>

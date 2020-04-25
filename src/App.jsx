@@ -9,7 +9,7 @@ import AppLayout from './layouts/AppLayout';
 const store = createStore(reducers, {
   countries: [],
   dark: false,
-  filters: [],
+  region: '',
   search: '',
   filtered: [],
 
