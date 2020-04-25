@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import { Link as LinkRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const Container = styled.div`

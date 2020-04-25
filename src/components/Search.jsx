@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.colors.ui};
@@ -8,7 +9,7 @@ const Container = styled.div`
   padding: 20px 50px;
   border-radius: 15px;
 `;
-const Main = styled.div`
+const Main = styled.form`
   width:100%;
   display:grid;
   grid-template-columns:25px 1fr;
@@ -22,16 +23,27 @@ const SearchField = styled.input`
 `;
 const Icon = styled.i``;
 
-const Search = () => {
-  console.log('search');
+const Search = (props) => {
+  const [term, setTerm] = useState('');
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.dispatch({
+      type: 'SEARCH_ITEM',
+      payload: term,
+    });
+    console.log(term);
+  };
+  const handleTermChange = (event) => {
+    setTerm(event.target.value);
+  };
   return (
     <Container>
-      <Main>
+      <Main onSubmit={handleSubmit}>
         <Icon className="fa fa-search" aria-hidden="true" />
-        <SearchField placeholder="Search for a Country..." />
+        <SearchField value={term} onChange={handleTermChange} placeholder="Search for a Country..." />
       </Main>
     </Container>
   );
 };
 
-export default Search;
+export default connect()(Search);

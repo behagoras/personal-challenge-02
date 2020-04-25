@@ -9,10 +9,10 @@ import AppLayout from './layouts/AppLayout';
 const store = createStore(reducers, {
   countries: [],
   dark: false,
-  filters: [
-    { },
-  ],
+  filters: [],
+  search: '',
   filtered: [],
+
 });
 
 const App = () => {

@@ -17,6 +17,17 @@ function reducer(state = [], action) {
           return country[0].region === action.payload;
         }),
       };
+    case 'SEARCH_ITEM':
+      console.log(action.payload);
+      console.log(state.filters);
+      return {
+        ...state,
+        search: action.payload,
+        filtered: state.countries.filter((country) => {
+          ''.toUpperCase();
+          return (country[0].name.toUpperCase().includes(action.payload.toUpperCase()));
+        }),
+      };
     case 'SET_THEME':
       return {
         ...state,
