@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import { card } from '../styles/mixins';
 
 const Container = styled.div`
-  background-color: ${(props) => props.theme.colors.ui};
-  box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.25);
+  ${card};
   max-width:500px;
   padding: 20px 50px;
   border-radius: 15px;
@@ -19,6 +19,7 @@ const Main = styled.form`
 
 const SearchField = styled.input`
   max-width: 300px;
+  background:none;
   border: none;
 `;
 const Icon = styled.i``;

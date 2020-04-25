@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
+import { card } from '../styles/mixins';
+import { Property, Properties } from '../styles/components';
 
 const Flag = styled.img`
   width:100%;
@@ -12,32 +14,14 @@ const Flag = styled.img`
 const Container = styled.div``;
 const Main = styled.div``;
 const Title = styled.h1``;
-const Properties = styled.ul``;
 
 const Borders = styled.div`
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
 `;
 
-const card = (props) => css`
-  background-color: ${props.theme.colors.ui};
-  box-shadow: 0 0 16px -8px rgba(0,0,0,0.25);
-  border-radius: 5px;
-  padding: 15px;
-  padding-left: 50px;
-`;
-
 const Border = styled.div`
   ${card};
-`;
-
-const Property = styled.li`
-  b {
-    color: ${(props) => props.theme.colors.text};
-  }
-  span {
-    color: ${(props) => props.theme.colors.textSoft};
-  }
 `;
 
 const Country = ({ countries = [] }) => {

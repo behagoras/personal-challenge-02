@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
+import { card } from '../styles/mixins';
 
 const Container = styled.header`
+  ${card};
   position:fixed;
   top:0;
   left:0;
   right:0;
   width:100%;
   height:auto;
-  background:${(props) => props.theme.colors.ui};
   padding:15px 0;
-  box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.25);
 `;
 
 const Main = styled.div`
@@ -27,11 +27,10 @@ const Main = styled.div`
 
 const Title = styled.h1`
   font-size:20px;
-  color:black;
-  text-decoration:none;
+  color:${(props) => props.theme.colors.text};
 `;
 
-const Anchor = styled.a`
+const Link = styled(LinkRouter)`
   text-decoration:none;
 `;
 
@@ -62,7 +61,7 @@ const Header = ({ dark, dispatch }) => {
   return (
     <Container>
       <Main>
-        <Anchor href="/"><Title>Where in the World</Title></Anchor>
+        <Link to="/"><Title>Where in the World</Title></Link>
         {
           dark ? (
             <Button onClick={handleClick} type="button">

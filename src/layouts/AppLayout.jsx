@@ -46,11 +46,11 @@ const AppLayout = (props) => {
   console.log('AppLayout -> state', props.countries);
   return (
     <ThemeProvider theme={props.dark ? darkTheme : lightTheme}>
-      <GlobalStyles />
-      <Container>
-        <Header />
-        <Main>
-          <Router>
+      <Router>
+        <GlobalStyles />
+        <Container>
+          <Header />
+          <Main>
             {/* <nav>
               <ul>
                 <li>
@@ -66,9 +66,9 @@ const AppLayout = (props) => {
                 <Home />
               </Route>
             </Switch>
-          </Router>
-        </Main>
-      </Container>
+          </Main>
+        </Container>
+      </Router>
     </ThemeProvider>
 
   );

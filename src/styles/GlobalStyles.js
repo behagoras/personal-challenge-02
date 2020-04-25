@@ -21,6 +21,7 @@ const modernize = css`
   }
 
   a{
+    cursor:pointer;
     text-decoration:none;
     color:initial;
     &:hover{

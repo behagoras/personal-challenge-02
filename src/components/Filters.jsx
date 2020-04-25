@@ -2,21 +2,17 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { connect } from 'react-redux';
 
+import { card } from '../styles/mixins';
+
 const Container = styled.div`
   margin-top: 40px;
 `;
 
-const card = (props) => css`
-  background-color: ${props.theme.colors.ui};
-  box-shadow: 0 0 16px -8px rgba(0,0,0,0.25);
-  border-radius: 5px;
+const Dropdown = styled.ul`
+  ${card};
   padding: 15px;
   padding-left: 50px;
   width: 150px;
-`;
-
-const Dropdown = styled.ul`
-  ${card};
   position: absolute;
   display: ${(props) => (props.show ? 'block' : 'none')};
   margin-top: 5px;
@@ -24,6 +20,9 @@ const Dropdown = styled.ul`
 
 const Button = styled.div`
   ${card};
+  padding: 15px;
+  padding-left: 50px;
+  width: 150px;
   display: grid;
   grid-template-columns: 1fr 15px;
   cursor: pointer;
