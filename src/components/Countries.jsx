@@ -9,10 +9,10 @@ const Container = styled.div`
   grid-gap:75px;
   max-width:1275px;
   margin:auto;
-
+  padding:15px;
 `;
 
-const Countries = ({ countries = [] }) => {
+const Countries = ({ filtered: countries = [] }) => {
   return (
     <Container>
       {
@@ -21,9 +21,9 @@ const Countries = ({ countries = [] }) => {
     </Container>
   );
 };
-const mapStateToProps = ({ countries }) => {
+const mapStateToProps = ({ filtered }) => {
   return {
-    countries,
+    filtered,
   };
 };
 

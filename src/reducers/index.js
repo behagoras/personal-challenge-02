@@ -5,6 +5,17 @@ function reducer(state = [], action) {
       return {
         ...state,
         countries: action.payload,
+        filtered: action.payload,
+      };
+    case 'SET_FILTERED':
+      return {
+        ...state,
+        filters: [{ region: action.payload }],
+        filtered: state.countries.filter((country) => {
+          console.log(country);
+          console.log(action.payload);
+          return country[0].region === action.payload;
+        }),
       };
     case 'SET_THEME':
       return {
