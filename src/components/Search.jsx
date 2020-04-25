@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { card } from '../styles/mixins';
+import { card } from '../styled/mixins';
 
 const Container = styled.div`
   ${card};

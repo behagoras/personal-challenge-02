@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Link as LinkRouter } from 'react-router-dom';
-import { card } from '../styles/mixins';
+import { card } from '../styled/mixins';
 
 const Container = styled.header`
   ${card};

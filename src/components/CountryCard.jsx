@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Property, Properties } from '../styles/components';
-import { card } from '../styles/mixins';
+import { Property, Properties } from '../styled/components';
+import { card } from '../styled/mixins';
 
 const Container = styled(Link)`
   ${card};

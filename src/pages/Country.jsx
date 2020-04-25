@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import { card } from '../styles/mixins';
-import { Property, Properties } from '../styles/components';
+import { card } from '../styled/mixins';
+import { Property, Properties } from '../styled/components';
 
 const Flag = styled.img`
   width:100%;

@@ -3,12 +3,12 @@ import { Switch, Route, BrowserRouter as Router, useParams } from 'react-router-
 import styled, { ThemeProvider } from 'styled-components';
 import { connect } from 'react-redux';
 import Home from '../pages/Home';
-import GlobalStyles from '../styles/GlobalStyles';
+import GlobalStyles from '../styled/GlobalStyles';
 
 import CountriesService from '../services/countries';
 
-import lightTheme from '../styles/light';
-import darkTheme from '../styles/dark';
+import lightTheme from '../styled/themes/light';
+import darkTheme from '../styled/themes/dark';
 import Header from '../components/Header';
 import Country from '../pages/Country';
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { connect } from 'react-redux';
 
-import { card } from '../styles/mixins';
+import { card } from '../styled/mixins';
 
 const Container = styled.div`
   margin-top: 40px;
