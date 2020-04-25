@@ -20,6 +20,14 @@ const modernize = css`
     font-family: 'Nunito Sans', sans-serif;
   }
 
+  a{
+    text-decoration:none;
+    color:initial;
+    &:hover{
+      color:initial;
+    }
+  }
+
   button, input {
     font-family: 'Nunito Sans', sans-serif;
     color: ${(props) => props.theme.colors.text};

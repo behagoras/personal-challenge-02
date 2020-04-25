@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const Card = styled.div`
+const Card = styled(Link)`
   background-color: ${(props) => props.theme.colors.ui};
   box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.25);
   width:calc(100% - 100px);
@@ -33,7 +34,7 @@ const Property = styled.li`
 const CountryCard = ({ data = {} }) => {
   const country = data ? data[0] : {};
   return (
-    <Card>
+    <Card to={`/${country.name}`}>
       <Flag src={country.flag} alt={country.name} />
       <Title>{country.name}</Title>
       <Properties>

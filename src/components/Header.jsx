@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Container = styled.header`
   position:fixed;
@@ -26,6 +27,12 @@ const Main = styled.div`
 
 const Title = styled.h1`
   font-size:20px;
+  color:black;
+  text-decoration:none;
+`;
+
+const Anchor = styled.a`
+  text-decoration:none;
 `;
 
 const Button = styled.button`
@@ -55,7 +62,7 @@ const Header = ({ dark, dispatch }) => {
   return (
     <Container>
       <Main>
-        <Title>Where in the World</Title>
+        <Anchor href="/"><Title>Where in the World</Title></Anchor>
         {
           dark ? (
             <Button onClick={handleClick} type="button">
