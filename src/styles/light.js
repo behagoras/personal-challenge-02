@@ -8,10 +8,11 @@
 
 const theme = {
   colors: {
-    background: ' hsl(0, 0%, 98%)',
+    background: '#fafafa',
     ui: '#ffffff',
     text: 'hsl(200, 15%, 8%)',
     textSoft: '#3a3a3a',
+    hoverLink: '#ffd069',
   },
   fonts: ['sans-serif', 'Roboto'],
   fontSizes: {

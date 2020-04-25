@@ -4,6 +4,11 @@ import styled from 'styled-components';
 const Card = styled.div`
   background-color: ${(props) => props.theme.colors.ui};
   box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.25);
+  width:calc(100% - 100px);
+  margin:auto;
+  @media screen and (min-width: 700px) {
+    width:100%;
+  }
 `;
 
 const Flag = styled.img`

@@ -16,8 +16,17 @@ const modernize = css`
   body {
     margin: 0;
     background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.textSoft};
     font-family: 'Nunito Sans', sans-serif;
+  }
 
+  button, input {
+    font-family: 'Nunito Sans', sans-serif;
+    color: ${(props) => props.theme.colors.text};
+    outline:none;
+    &:placeholder {
+      color: ${(props) => props.theme.colors.textSoft};
+    }
   }
 
   main {
